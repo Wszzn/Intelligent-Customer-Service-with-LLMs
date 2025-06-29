@@ -39,7 +39,7 @@ class ChatSystem:
         self.retriever = Retriever(self.embedding_handler, self.kg_builder)
         self.reranker = Reranker()
         self.llm_handler = LLMHandler()
-        self.client = OpenAI(api_key="sk-4c48568e7bcb45b386cda7f51f58386a", base_url="https://api.deepseek.com")
+        self.client = OpenAI(api_key="your_api_key", base_url="https://api.deepseek.com")
     def process_query(self, query: str) -> list:
         """处理用户查询的完整流程"""
         # 0. 预处理查询文本
